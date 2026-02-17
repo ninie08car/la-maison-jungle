@@ -1,19 +1,16 @@
-import "../styles/Cart.css";
-
 const Cart = () => {
-  const monstera = 8;
-  const lierre = 10;
-  const bouquet = 15;
-
+  const monsteraPrice = 8;
+  const ivyPrice = 10;
+  const flowerPrice = 15;
   return (
-    <div className="panier">
+    <div>
       <h2>Panier</h2>
       <ul>
-        <li>Monstera : {monstera}€</li>
-        <li>Lierre : {lierre}€</li>
-        <li>Bouquet de fleur : {bouquet}€</li>
+        <li>Monstera : {monsteraPrice}€</li>
+        <li>Lierre : {ivyPrice}€</li>
+        <li>Fleurs : {flowerPrice}€</li>
       </ul>
-      <p>Total : {monstera + lierre + bouquet}€</p>
+      Total : {monsteraPrice + ivyPrice + flowerPrice}€
     </div>
   );
 };
